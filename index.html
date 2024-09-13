@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Car Sale</title>
+	</head>
+	<body>
+		<main>
+			<section data-state="hidden" id="hero-section" class="hero__section">
+				<div class="card__shade">
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="hero__wrapper lg__padded">
+					<header>
+						<div class="header__links">
+							<ul>
+								<li>Shop</li>
+								<li>Forum</li>
+								<li>Contact</li>
+								<li>Blog</li>
+							</ul>
+
+							<hr />
+
+							<div class="dropdown">
+								<button
+									role="combobox"
+									aria-label="dropdown button"
+									aria-haspopup="listbox"
+									aria-expanded="false"
+									aria-controls="dropdown-langs"
+									class="dropdown__btn"
+								>
+									<span id="selected-lang">
+										<img src="./assets/images/uk.png" alt="uk" />
+
+										UK
+									</span>
+
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g id="Arrow / Caret_Down_MD">
+											<path
+												id="Vector"
+												d="M16 10L12 14L8 10"
+												stroke="rgb(var(--black) / 70%)"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</g>
+									</svg>
+								</button>
+
+								<ul id="dropdown-langs" role="listbox" class="dropdown__items">
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="lang" id="uk" />
+										<label for="uk">
+											<img src="./assets/images/uk.png" alt="uk" /> UK</label
+										>
+									</li>
+
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="lang" id="us" />
+										<label for="us">
+											<img src="./assets/images/us.png" alt="us" /> US</label
+										>
+									</li>
+
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="lang" id="fr" />
+										<label for="fr">
+											<img src="./assets/images/fr.png" alt="fr" /> FR</label
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</header>
+
+					<nav>
+						<div class="links__wrapper">
+							<div class="logo">
+								<img src="./assets/images/logo1.png" alt="logo" />
+							</div>
+
+							<ul data-visible="false" id="nav-links">
+								<li>Air Lift Sale</li>
+								<li>Wheels</li>
+								<li>Suspension</li>
+								<li>Interior</li>
+								<li>Exterior</li>
+								<li>Performance</li>
+								<li>Merchandise</li>
+								<li>Clearance</li>
+							</ul>
+						</div>
+
+						<div class="nav__buttons">
+							<div class="btn__left">
+								<div class="dropdown">
+									<button
+										role="combobox"
+										aria-label="dropdown button"
+										aria-haspopup="listbox"
+										aria-expanded="false"
+										aria-controls="dropdown-currencies"
+										class="dropdown__btn"
+									>
+										<span id="selected-currency">£ GBP</span>
+
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g id="Arrow / Caret_Down_MD">
+												<path
+													id="Vector"
+													d="M16 10L12 14L8 10"
+													stroke="rgb(var(--text-color))"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+										</svg>
+									</button>
+
+									<ul
+										id="dropdown-currencies"
+										role="listbox"
+										class="dropdown__items"
+									>
+										<li role="option" class="dropdown__item">
+											<input type="radio" name="currency" id="gbp" />
+											<label for="gbp">£ GBP</label>
+										</li>
+
+										<li role="option" class="dropdown__item">
+											<input type="radio" name="currency" id="usd" />
+											<label for="usd">$ USD</label>
+										</li>
+
+										<li role="option" class="dropdown__item">
+											<input type="radio" name="currency" id="eur" />
+											<label for="eur">€ EUR</label>
+										</li>
+									</ul>
+								</div>
+
+								<img src="./assets/svg/user-alt-1-svgrepo-com.svg" alt="user" />
+							</div>
+
+							<hr />
+
+							<div class="btn__right">
+								<button>
+									<img
+										src="./assets/svg/cart-shopping-svgrepo-com.svg"
+										alt="cart"
+									/>
+								</button>
+
+								<span>2</span>
+							</div>
+						</div>
+					</nav>
+
+					<div class="content__wrapper">
+						<div class="text__content">
+							<span>Beat The</span>
+
+							<h1>
+								black <br />
+								<span>
+									<span>friday</span>
+									<span>friday</span>
+								</span>
+							</h1>
+						</div>
+
+						<p>Free <span>UK Delivery, Manchester</span> Over £150</p>
+
+						<div class="search__wrapper">
+							<div class="dropdown">
+								<button
+									role="combobox"
+									aria-label="dropdown button"
+									aria-haspopup="listbox"
+									aria-expanded="false"
+									aria-controls="dropdown-parts"
+									class="dropdown__btn"
+								>
+									<span id="selected-part">Wheels</span>
+
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<g id="Arrow / Caret_Down_MD">
+											<path
+												id="Vector"
+												d="M16 10L12 14L8 10"
+												stroke="rgb(var(--white))"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</g>
+									</svg>
+								</button>
+
+								<ul id="dropdown-parts" role="listbox" class="dropdown__items">
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="part" id="wheels" />
+										<label for="wheels">Wheels</label>
+									</li>
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="part" id="tyres" />
+										<label for="tyres">Tyres</label>
+									</li>
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="part" id="rims" />
+										<label for="rims">Rims</label>
+									</li>
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="part" id="suspensions" />
+										<label for="suspensions">Suspensions</label>
+									</li>
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="part" id="coils" />
+										<label for="coils">Coils</label>
+									</li>
+									<li role="option" class="dropdown__item">
+										<input type="radio" name="part" id="brakes" />
+										<label for="brakes">Brakes</label>
+									</li>
+								</ul>
+							</div>
+
+							<hr />
+
+							<div class="search__input">
+								<input
+									type="search"
+									name=""
+									id=""
+									placeholder="Search online store here..."
+								/>
+
+								<button>
+									<img
+										src="./assets/svg/search-alt-2-svgrepo-com.svg"
+										alt="search"
+									/>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="sub__info">
+						<div class="part__icons">
+							<div style="--d: 1" class="part__icon">
+								<img src="./assets/svg/rim-tyre-svgrepo-com.svg" alt="rim" />
+							</div>
+
+							<div style="--d: 2" class="part__icon">
+								<img
+									src="./assets/svg/engine-motor-svgrepo-com.svg"
+									alt="motor"
+								/>
+							</div>
+
+							<div style="--d: 3" class="part__icon">
+								<img src="./assets/svg/screw-svgrepo-com.svg" alt="screw" />
+							</div>
+
+							<div style="--d: 4" class="part__icon">
+								<img
+									src="./assets/svg/wheel-steel-svgrepo-com.svg"
+									alt="wheel"
+								/>
+							</div>
+
+							<div style="--d: 5" class="part__icon">
+								<img
+									src="./assets/svg/suspension-2-svgrepo-com.svg"
+									alt="suspension"
+								/>
+							</div>
+
+							<div style="--d: 6" class="part__icon">
+								<img
+									src="./assets/svg/safety-seat-car-svgrepo-com.svg"
+									alt="seat"
+								/>
+							</div>
+
+							<div style="--d: 7" class="part__icon">
+								<img
+									src="./assets/svg/timing-belt-svgrepo-com.svg"
+									alt="belt"
+								/>
+							</div>
+
+							<div style="--d: 8" class="part__icon">
+								<img src="./assets/svg/piston-svgrepo-com.svg" alt="piston" />
+							</div>
+						</div>
+
+						<div class="extra__info">
+							<div class="info__slider">
+								<div class="slider__wrapper">
+									<div id="slider" class="slider">
+										<div class="slider__info">
+											<h2 class="info__title">20%<br />off</h2>
+
+											<p>
+												Lorem, ipsum dolor sit amet consectetur adipisicing
+												elit. Magnam odit commodi doloremque?
+											</p>
+										</div>
+
+										<div class="slider__info">
+											<h2 class="info__title">30%<br />off</h2>
+
+											<p>
+												Lorem, ipsum dolor sit amet consectetur adipisicing
+												elit. Magnam odit commodi doloremque?
+											</p>
+										</div>
+
+										<div class="slider__info">
+											<h2 class="info__title">40%<br />off</h2>
+
+											<p>
+												Lorem, ipsum dolor sit amet consectetur adipisicing
+												elit. Magnam odit commodi doloremque?
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div id="indicator" class="indicator">
+									<span class="active"></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+
+							<a href="#">
+								<svg
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M17.488 6.51196L5.98804 18.012"
+										stroke="#fff"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M17.988 15.0121L17.988 6.35514C17.988 6.15239 17.8236 5.98804 17.6209 5.98804L8.98804 5.98804"
+										stroke="#fff"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				data-state="hidden"
+				id="brand-section"
+				class="section__wrapper brand__section"
+			>
+				<div class="section__header">
+					<div class="header">
+						<span>Shopping</span>
+
+						<h2>premium brands</h2>
+					</div>
+				</div>
+
+				<div class="brand__display">
+					<div style="--d: 1" class="brand__card">
+						<div class="video__con">
+							<video
+								class="brand__video"
+								src="./assets/images/brand1.mp4"
+								muted
+								loop
+							></video>
+						</div>
+
+						<div class="brand__logo">
+							<img src="./assets/images/brand_logo1.png" alt="bmw" />
+						</div>
+					</div>
+
+					<div style="--d: 2" class="brand__card">
+						<div class="video__con">
+							<video
+								class="brand__video"
+								src="./assets/images/brand2.mp4"
+								muted
+								loop
+							></video>
+						</div>
+
+						<div class="brand__logo">
+							<img src="./assets/images/brand_logo2.png" alt="audi" />
+						</div>
+					</div>
+
+					<div style="--d: 3" class="brand__card">
+						<div class="video__con">
+							<video
+								class="brand__video"
+								src="./assets/images/brand3.mp4"
+								muted
+								loop
+							></video>
+						</div>
+
+						<div class="brand__logo">
+							<img src="./assets/images/brand_logo3.png" alt="mclaren" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section__wrapper">
+				<div class="marquee__wrapper">
+					<div class="marquee">
+						<div class="marquee__content">
+							<span>fuel</span>
+							<hr />
+							<span>whiteline</span>
+							<hr />
+							<span>air lift</span>
+							<hr />
+							<span>cobra</span>
+							<hr />
+							<span>vertex</span>
+							<hr />
+							<span>nankang</span>
+							<hr />
+							<span>fumes</span>
+							<hr />
+							<span>bump</span>
+							<hr />
+							<span>view</span>
+							<hr />
+						</div>
+
+						<div class="marquee__content" aria-hidden="true">
+							<span>fuel</span>
+							<hr />
+							<span>whiteline</span>
+							<hr />
+							<span>air lift</span>
+							<hr />
+							<span>cobra</span>
+							<hr />
+							<span>vertex</span>
+							<hr />
+							<span>nankang</span>
+							<hr />
+							<span>fumes</span>
+							<hr />
+							<span>bump</span>
+							<hr />
+							<span>view</span>
+							<hr />
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="marquee__content">
+							<span>fuel</span>
+							<hr />
+							<span>whiteline</span>
+							<hr />
+							<span>air lift</span>
+							<hr />
+							<span>cobra</span>
+							<hr />
+							<span>vertex</span>
+							<hr />
+							<span>nankang</span>
+							<hr />
+							<span>fumes</span>
+							<hr />
+							<span>bump</span>
+							<hr />
+							<span>view</span>
+							<hr />
+						</div>
+
+						<div class="marquee__content" aria-hidden="true">
+							<span>fuel</span>
+							<hr />
+							<span>whiteline</span>
+							<hr />
+							<span>air lift</span>
+							<hr />
+							<span>cobra</span>
+							<hr />
+							<span>vertex</span>
+							<hr />
+							<span>nankang</span>
+							<hr />
+							<span>fumes</span>
+							<hr />
+							<span>bump</span>
+							<hr />
+							<span>view</span>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				data-state="hidden"
+				id="wheel-section"
+				class="section__wrapper wheel__section lg__padded"
+			>
+				<div class="section__header">
+					<div class="header">
+						<span>Trending</span>
+
+						<h2>wheels</h2>
+
+						<a href="#">
+							<span>All Store Products</span>
+
+							<img
+								src="./assets/svg/arrow-up-right-alt-svgrepo-com.svg"
+								alt="goto"
+							/>
+						</a>
+					</div>
+
+					<div id="rim-control" class="slider__control">
+						<button id="left" disabled>
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4 12H20M20 12L16 8M20 12L16 16"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+
+						<button id="right">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4 12H20M20 12L16 8M20 12L16 16"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div id="rim-slider-wrapper" class="product__slider__wrapper">
+					<div id="rim-slider" class="product__slider">
+						<div style="--d: 1" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/rim1.png" alt="rim 1" />
+
+							<div class="product__text">
+								<h3>work emotion cr<br />kiwami wheels</h3>
+
+								<p>201.83 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="rim__variation">
+								<div class="variation">
+									<span class="available">15</span>
+									<span class="available">16</span>
+									<span class="available">17</span>
+									<span class="available">18</span>
+									<span class="available">19</span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 2" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/rim2.png" alt="rim 2" />
+
+							<div class="product__text">
+								<h3>work emotion cr<br />kiwami wheels</h3>
+
+								<p>201.83 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="rim__variation">
+								<div class="variation">
+									<span class="available">15</span>
+									<span>16</span>
+									<span>17</span>
+									<span>18</span>
+									<span>19</span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 3" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/rim3.png" alt="rim 3" />
+
+							<div class="product__text">
+								<h3>work emotion cr<br />kiwami wheels</h3>
+
+								<p>201.83 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="rim__variation">
+								<div class="variation">
+									<span class="available">15</span>
+									<span>16</span>
+									<span>17</span>
+									<span>18</span>
+									<span class="available">19</span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 4" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/rim4.png" alt="rim 4" />
+
+							<div class="product__text">
+								<h3>work emotion cr<br />kiwami wheels</h3>
+
+								<p>201.83 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="rim__variation">
+								<div class="variation">
+									<span class="available">15</span>
+									<span class="available">16</span>
+									<span>17</span>
+									<span>18</span>
+									<span class="available">19</span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 5" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/rim5.png" alt="rim 5" />
+
+							<div class="product__text">
+								<h3>work emotion cr<br />kiwami wheels</h3>
+
+								<p>201.83 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="rim__variation">
+								<div class="variation">
+									<span class="available">15</span>
+									<span>16</span>
+									<span class="available">17</span>
+									<span class="available">18</span>
+									<span>19</span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 6" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/rim6.png" alt="rim 6" />
+
+							<div class="product__text">
+								<h3>work emotion cr<br />kiwami wheels</h3>
+
+								<p>201.83 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="rim__variation">
+								<div class="variation">
+									<span>15</span>
+									<span class="available">16</span>
+									<span class="available">17</span>
+									<span class="available">18</span>
+									<span>19</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				data-state="hidden"
+				id="coil-section"
+				class="section__wrapper coil__section lg__padded"
+			>
+				<div class="section__header">
+					<div class="header">
+						<span>Trending</span>
+
+						<h2>coilovers</h2>
+
+						<a href="#">
+							<span>All Store Products</span>
+
+							<img
+								src="./assets/svg/arrow-up-right-alt-svgrepo-com.svg"
+								alt="goto"
+							/>
+						</a>
+					</div>
+
+					<div id="coil-control" class="slider__control">
+						<button id="left" disabled>
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4 12H20M20 12L16 8M20 12L16 16"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+
+						<button id="right">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4 12H20M20 12L16 8M20 12L16 16"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div id="coil-slider-wrapper" class="product__slider__wrapper">
+					<div id="coil-slider" class="product__slider">
+						<div style="--d: 1" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/coil1.png" alt="coil 1" />
+
+							<div class="product__text">
+								<h3>
+									bc racing br rn coilovers bmw 7<br />series sedan e65 01-08
+								</h3>
+
+								<p>625.50 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="coil__variation">
+								<div class="variation">
+									<span style="--color: red"></span>
+									<span style="--color: black"></span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 2" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/coil2.png" alt="coil 2" />
+
+							<div class="product__text">
+								<h3>
+									bc racing br rn coilovers bmw 7<br />series sedan e65 01-08
+								</h3>
+
+								<p>625.50 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="coil__variation">
+								<div class="variation">
+									<span style="--color: black"></span>
+									<span style="--color: slategrey"></span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 3" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/coil3.png" alt="coil 3" />
+
+							<div class="product__text">
+								<h3>
+									bc racing br rn coilovers bmw 7<br />series sedan e65 01-08
+								</h3>
+
+								<p>625.50 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="coil__variation">
+								<div class="variation">
+									<span style="--color: red"></span>
+									<span style="--color: black"></span>
+									<span style="--color: slategrey"></span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 4" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/coil4.png" alt="coil 4" />
+
+							<div class="product__text">
+								<h3>
+									bc racing br rn coilovers bmw 7<br />series sedan e65 01-08
+								</h3>
+
+								<p>625.50 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="coil__variation">
+								<div class="variation">
+									<span style="--color: slategrey"></span>
+									<span style="--color: black"></span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 5" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/coil5.png" alt="coil 5" />
+
+							<div class="product__text">
+								<h3>
+									bc racing br rn coilovers bmw 7<br />series sedan e65 01-08
+								</h3>
+
+								<p>625.50 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="coil__variation">
+								<div class="variation">
+									<span style="--color: red"></span>
+									<span style="--color: black"></span>
+									<span style="--color: slategrey"></span>
+									<span style="--color: burlywood"></span>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 6" class="product__card">
+							<div class="card__shade">
+								<span></span>
+								<span></span>
+							</div>
+
+							<img src="./assets/images/coil6.png" alt="coil 6" />
+
+							<div class="product__text">
+								<h3>
+									bc racing br rn coilovers bmw 7<br />series sedan e65 01-08
+								</h3>
+
+								<p>625.50 <span>usd</span></p>
+							</div>
+
+							<span class="overlay"></span>
+
+							<div class="coil__variation">
+								<div class="variation">
+									<span style="--color: slategrey"></span>
+									<span style="--color: black"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				data-state="hidden"
+				id="merch-section"
+				class="section__wrapper merch__section lg__padded"
+			>
+				<div class="section__header">
+					<div class="header">
+						<span>Trending</span>
+
+						<h2>merch</h2>
+					</div>
+				</div>
+
+				<div class="product__slider__wrapper">
+					<div class="product__slider">
+						<div style="--d: 1" class="product__card">
+							<img src="./assets/images/merch1.png" alt="merch 1" />
+
+							<div class="product__text">
+								<h3>big dish energy motion<br />black t-shirt</h3>
+
+								<p>350.50 <span>usd</span></p>
+							</div>
+						</div>
+
+						<div style="--d: 2" class="product__card">
+							<img src="./assets/images/merch2.png" alt="merch 2" />
+
+							<div class="product__text">
+								<h3>big dish energy motion<br />black t-shirt</h3>
+
+								<p>350.50 <span>usd</span></p>
+							</div>
+						</div>
+
+						<div style="--d: 3" class="product__card">
+							<img src="./assets/images/merch3.png" alt="merch 3" />
+
+							<div class="product__text">
+								<h3>big dish energy motion<br />black t-shirt</h3>
+
+								<p>350.50 <span>usd</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#">
+					<span>All Store Products</span>
+
+					<img
+						src="./assets/svg/arrow-up-right-alt-svgrepo-com.svg"
+						alt="goto"
+					/>
+				</a>
+			</section>
+
+			<section class="section__wrapper">
+				<div class="marquee__wrapper">
+					<div class="marquee">
+						<div class="marquee__content">
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+						</div>
+
+						<div class="marquee__content" aria-hidden="true">
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+						</div>
+					</div>
+
+					<div class="marquee">
+						<div class="marquee__content">
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+						</div>
+
+						<div class="marquee__content" aria-hidden="true">
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+							<span>20% off</span>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				data-state="hidden"
+				id="testimonial-section"
+				class="section__wrapper testimonial__section lg__padded"
+			>
+				<div class="section__header">
+					<div class="header">
+						<span>Filling</span>
+
+						<h2>the love</h2>
+					</div>
+
+					<div id="testimonial-control" class="slider__control">
+						<button id="left" disabled>
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4 12H20M20 12L16 8M20 12L16 16"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+
+						<button id="right">
+							<svg
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4 12H20M20 12L16 8M20 12L16 16"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div id="testimonial-slider-wrapper" class="product__slider__wrapper">
+					<div id="testimonial-slider" class="product__slider">
+						<div style="--d: 1" class="product__card">
+							<div class="testimonial__text">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquid laborum ad illo ipsam tempora sunt, quisquam modi
+									blanditiis doloremque dolore quam asperiores iure
+									exercitationem vel incidunt officia totam neque non. Lorem
+									ipsum dolor sit amet consectetur adipisicing elit. Dicta
+									pariatur magni impedit?
+								</p>
+							</div>
+
+							<div class="testimonial__variation">
+								<div class="variation">
+									<h4>Jay Z</h4>
+
+									<p>✓ Verified Customer</p>
+
+									<p>
+										Excellent
+										<span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9734;</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 2" class="product__card">
+							<div class="testimonial__text">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquid laborum ad illo ipsam tempora sunt, quisquam modi
+									blanditiis doloremque dolore quam asperiores iure
+									exercitationem vel incidunt officia totam neque non. Lorem
+									ipsum dolor sit amet consectetur adipisicing elit. Dicta
+									pariatur magni impedit?
+								</p>
+							</div>
+
+							<div class="testimonial__variation">
+								<div class="variation">
+									<h4>Jay Z</h4>
+
+									<p>✓ Verified Customer</p>
+
+									<p>
+										Excellent
+										<span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9734;</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 3" class="product__card">
+							<div class="testimonial__text">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquid laborum ad illo ipsam tempora sunt, quisquam modi
+									blanditiis doloremque dolore quam asperiores iure
+									exercitationem vel incidunt officia totam neque non. Lorem
+									ipsum dolor sit amet consectetur adipisicing elit. Dicta
+									pariatur magni impedit?
+								</p>
+							</div>
+
+							<div class="testimonial__variation">
+								<div class="variation">
+									<h4>Jay Z</h4>
+
+									<p>✓ Verified Customer</p>
+
+									<p>
+										Excellent
+										<span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9734;</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div style="--d: 4" class="product__card">
+							<div class="testimonial__text">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquid laborum ad illo ipsam tempora sunt, quisquam modi
+									blanditiis doloremque dolore quam asperiores iure
+									exercitationem vel incidunt officia totam neque non. Lorem
+									ipsum dolor sit amet consectetur adipisicing elit. Dicta
+									pariatur magni impedit?
+								</p>
+							</div>
+
+							<div class="testimonial__variation">
+								<div class="variation">
+									<h4>Jay Z</h4>
+
+									<p>✓ Verified Customer</p>
+
+									<p>
+										Excellent
+										<span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9734;</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-state="hidden" id="gallery-section" class="section__wrapper gallery__section">
+				<div class="top__gallery lg__padded">
+					<div style="--d: 1;" class="gallery__img">
+						<img src="./assets/images/gallery1.jpg" alt="gallery image 1" />
+					</div>
+
+					<div>
+						<h2 style="--d: 2;">Gallery</h2>
+
+						<div>
+							<div style="--d: 3;" class="gallery__img">
+								<img src="./assets/images/gallery2.jpg" alt="gallery image 2" />
+							</div>
+
+							<div>
+								<div style="--d: 4;" class="gallery__icon">
+									<span>Go to gallery</span>
+
+									<a href="#">
+										<img
+											src="./assets/svg/arrow-up-right-alt-svgrepo-com.svg"
+											alt="goto"
+										/>
+									</a>
+								</div>
+
+								<div style="--d: 5;" class="gallery__img">
+									<img
+										src="./assets/images/gallery3.jpg"
+										alt="gallery image 3"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="gallery__banner__wrapper">
+					<div style="--d: 6;" class="gallery__banner">
+						<div class="banner__content">
+							<p>we're more than just a <strong>business</strong></p>
+							<p>
+								<span>we're a family</span>
+								<span>we're a family</span>
+							</p>
+
+							<div class="logo">
+								<img src="./assets/images/logo1.png" alt="logo" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom__gallery lg__padded">
+					<div style="--d: 7;" class="gallery__img">
+						<img src="./assets/images/gallery4.jpg" alt="gallery image 4" />
+					</div>
+
+					<div style="--d: 8;" class="gallery__img">
+						<img src="./assets/images/gallery5.jpg" alt="gallery image 5" />
+					</div>
+
+					<div style="--d: 9;" class="gallery__img">
+						<img src="./assets/images/gallery6.jpg" alt="gallery image 6" />
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer data-state="hidden" id="footer-section" class="section__wrapper sm__padded">
+			<div data-visible="false" id="footer-wrapper" class="footer__wrapper">
+				<div class="footer__tint"></div>
+
+				<div class="card__shade">
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="footer__top">
+					<div class="footer__about__wrapper">
+						<div style="--d: 1;" class="logo">
+							<img src="./assets/images/logo1.png" alt="logo" />
+						</div>
+
+						<div class="footer__about">
+							<h2 style="--d: 2;">about us</h2>
+
+							<p style="--d: 3;">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+								quo, dicta optio natus voluptatibus temporibus veniam harum
+								quibusdam omnis molestiae sunt voluptas quasi alias reiciendis
+								rem, beatae corporis aut distinctio velit eaque, modi odit
+								fugit! Quod laboriosam eos deleniti accusamus aspernatur sit.
+								Mollitia, itaque saepe. Voluptatum modi eius quaerat molestiae!
+							</p>
+						</div>
+					</div>
+
+					<div class="footer__links__wrapper">
+						<div class="footer__links">
+							<h3 style="--d: 1;">ordering</h3>
+
+							<ul>
+								<li style="--d: 2;"><a href="#">Delivery</a></li>
+								<li style="--d: 3;"><a href="#">My Account</a></li>
+								<li style="--d: 4;"><a href="#">Create An Account</a></li>
+								<li style="--d: 5;"><a href="#">TAX And VAT Info</a></li>
+								<li style="--d: 6;"><a href="#">Finance</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__links">
+							<h3 style="--d: 2;">811motorsport</h3>
+
+							<ul>
+								<li style="--d: 3;"><a href="#">Forum</a></li>
+								<li style="--d: 4;"><a href="#">Blog</a></li>
+								<li style="--d: 5;"><a href="#">About Us</a></li>
+								<li style="--d: 6;"><a href="#">Contact Us</a></li>
+								<li style="--d: 7;"><a href="#">Become A Dealer</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__links">
+							<h3 style="--d: 3;">privacy</h3>
+
+							<ul>
+								<li style="--d: 4;"><a href="#">Terms & Conditions</a></li>
+								<li style="--d: 5;"><a href="#">Warranty & Returns</a></li>
+								<li style="--d: 6;"><a href="#">Privacy & Cookies</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__bottom">
+					<div class="footer__bottom__left">
+						<a style="--d: 1;" href="#" class="social__link">
+							<img src="./assets/svg/youtube-168-svgrepo-com.svg" alt="youtube"
+						/></a>
+						<a style="--d: 2;" href="#" class="social__link"
+							><img src="./assets/svg/linkedin-svgrepo-com.svg" alt="linkedin"
+						/></a>
+						<a style="--d: 3;" href="#" class="social__link"
+							><img
+								src="./assets/svg/pinterest-180-svgrepo-com.svg"
+								alt="pinterest"
+						/></a>
+						<a style="--d: 4;" href="#" class="social__link"
+							><img
+								src="./assets/svg/instagram-1-svgrepo-com.svg"
+								alt="instagram"
+						/></a>
+						<a style="--d: 5;" href="#" class="social__link"
+							><img src="./assets/svg/facebook-svgrepo-com.svg" alt="facebook"
+						/></a>
+					</div>
+
+					<div class="footer__bottom__right">
+						<div class="logo">
+							<img src="./assets/images/logo1.png" alt="logo" />
+						</div>
+
+						<p>
+							© 2024 <strong>jayz</strong>. all rights reserved jayz LTD are
+							regulated by the finance authority.
+						</p>
+					</div>
+				</div>
+
+				<button onclick="backToTop()" class="back__top">
+					<img src="./assets/svg/arrow-small-up-svgrepo-com.svg" alt="up" />
+					<span>Back To Top</span>
+				</button>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
