@@ -1003,13 +1003,13 @@ nav {
 	background-color: rgb(var(--primary));
 }
 
-/* .marquee:nth-child(1) .marquee__content {
+.marquee:nth-child(1) .marquee__content {
 	animation: marquee 25s linear infinite;
 }
 
 .marquee:nth-child(2) .marquee__content {
 	animation: marquee 25s linear infinite reverse;
-} */
+}
 
 .marquee__content span {
 	line-height: 1;
